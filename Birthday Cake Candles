@@ -1,0 +1,12 @@
+int birthdayCakeCandles(vector<int> candles) {
+    int n=candles.size();
+    sort(candles.begin(),candles.end());
+    int count=0;
+    int last=candles[n-1];
+for(int i=0; i<n; i++)
+{
+        if(last==candles[i])
+            count++;
+}
+    return count;
+}
