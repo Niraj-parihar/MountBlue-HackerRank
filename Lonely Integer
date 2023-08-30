@@ -1,0 +1,16 @@
+sort(a.begin(),a.end());
+    int i=0;
+  int n=a.size();
+    // int j=i+1;
+    // while(i<n-1 || j<n){
+    //     if(a[i]==a[j]){
+    //         i=i+2;
+    //         j=j+2;
+    //     }
+    // }
+    // return a[i];
+    
+    while((i<n-1) && !(a[i]^a[i+1])){
+        i+=2;
+    }
+    return a[i];
