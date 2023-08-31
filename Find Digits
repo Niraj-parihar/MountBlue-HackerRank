@@ -1,0 +1,12 @@
+int findDigits(int n) {
+   int count=0;
+    int m=n;
+       while(m > 0) {
+            int curDigit = m%10;
+            m /= 10;
+            if(curDigit != 0 && n % curDigit == 0) {
+                count++;
+            }
+        }
+    return count;
+    }
