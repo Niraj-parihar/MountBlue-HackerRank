@@ -1,0 +1,17 @@
+void bonAppetit(vector<int> bill, int k, int b) {
+int total=0;
+    int n=bill.size();
+    for(int i=0;i<n;i++){
+        total+=bill[i];
+    }
+   int split=total-bill[k];
+    int perHead=split/2;
+    if(perHead==b){
+        cout<<"Bon Appetit"<<endl;
+    }
+    else{
+        cout<<b-perHead;
+    }
+    
+    
+}
