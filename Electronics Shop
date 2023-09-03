@@ -1,0 +1,16 @@
+   // vector<int> res;
+    // int n=keyboards.size();
+    //  int m=drives.size();
+    // int i=0,j=0;
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<m;j++){
+    //         if(keyboards[i]+drives[j]<b){
+    //          res.push_back(keyboards[i]+drives[j]);
+    //         }
+    //     }
+    // }
+    // if(res.empty()){
+    //     return -1;
+    // }
+    // int exp= *max_element(res.begin(), res.end());
+    // return exp;
