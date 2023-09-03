@@ -1,0 +1,13 @@
+int viralAdvertising(int n) {
+            int dayCount=0;
+    int shared=5;
+    int liked=0;
+    int cum=0;
+    while(dayCount!=n){
+        liked=shared/2;
+        shared=liked*3;
+        cum+=liked;
+        dayCount++;
+    }
+    return cum;
+}
