@@ -1,0 +1,9 @@
+long marcsCakewalk(vector<int> calorie) {
+sort(calorie.begin(),calorie.end(),greater<>());
+    long miles=0;
+    int n=calorie.size();
+    for(int j=0;j<n;j++){
+           miles+=(pow(2,j)*calorie[j]);
+    }
+    return miles;
+}
