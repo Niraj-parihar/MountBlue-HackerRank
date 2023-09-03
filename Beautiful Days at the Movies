@@ -1,0 +1,21 @@
+int reverse(int x) {
+  int ret = 0;
+  while (x) {
+    ret = ret * 10 + x % 10;
+    x /= 10;
+  }
+  return ret;
+}
+
+int beautifulDays(int i, int j, int k) {
+    int count=0;
+ while(i<=j){
+    int diff = abs(i - reverse(i));
+    if (diff % k == 0) {
+      count++;
+    }
+     i++;
+  }
+    return count;
+    
+}
