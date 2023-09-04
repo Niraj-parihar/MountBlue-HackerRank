@@ -1,0 +1,12 @@
+bool fun(string x,string y){
+if(x.length()!=y.length()){
+return x.length()<y.length();}
+    else{
+        return x<y;
+    }
+}
+
+vector<string> bigSorting(vector<string> unsorted) {
+        sort(unsorted.begin(),unsorted.end(),fun);
+      return unsorted;
+}
