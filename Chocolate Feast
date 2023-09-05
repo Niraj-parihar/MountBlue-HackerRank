@@ -1,0 +1,10 @@
+int chocolateFeast(int n, int c, int m) {
+      int res=0;
+        res+=n/c;
+        int x=n/c;
+        while(x>=m){
+            res+=x/m;
+            x=x/m+x%m;
+        }
+       return res;
+}
