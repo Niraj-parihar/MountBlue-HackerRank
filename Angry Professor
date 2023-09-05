@@ -1,0 +1,15 @@
+string angryProfessor(int k, vector<int> a) {
+   sort(a.begin(),a.end());
+    int student=0;
+    int n=a.size();
+    for(int i=0;i<n;i++){
+        if(a[i]<=0){
+            student++;
+        }
+    }
+    if(student>=k){
+        return "NO";
+    }
+        return "YES";
+   
+}
