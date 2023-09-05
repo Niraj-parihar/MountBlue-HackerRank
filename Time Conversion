@@ -1,0 +1,14 @@
+string timeConversion(string s) {
+    string hour = s.substr(0, 2);
+    int hour1 = stoi(hour);
+    size_t pos = s.find("PM");
+    if (pos != string::npos) {
+        if (hour1 + 12 < 24)
+            hour = to_string(hour1 + 12);
+    }
+    else {
+        if (hour1 == 12)
+            hour= "00";
+    }
+    return s.replace(0, 2, hour).erase(s.size() - 2);
+}
