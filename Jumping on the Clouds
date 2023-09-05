@@ -1,0 +1,10 @@
+int jumpingOnClouds(vector<int> c) {
+    int res = 0, i = 0;
+    int n=c.size();
+    while(i < n - 1){
+        if(c[i + 2] == 1) i++;
+        else i+=2;
+        res++;
+    }
+    return res;
+}
