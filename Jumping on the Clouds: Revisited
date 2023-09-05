@@ -1,0 +1,16 @@
+// Complete the jumpingOnClouds function below.
+int jumpingOnClouds(vector<int> c, int k) {
+    int e=100;
+    int start=0;
+    int n=c.size();
+    while(true){
+        start+=k;
+        start%=n;
+      if(c[start]){
+           e-=2;
+      }
+        e--;
+     if(start==0) break;
+    }
+    return e;
+}
