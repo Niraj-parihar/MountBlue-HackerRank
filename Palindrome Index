@@ -1,0 +1,23 @@
+int palindromeIndex(string s) {
+   int n=s.size();
+    int i=0,j=n-1;
+    int stored_i=i;
+    int stored_j=j;
+    int error=false;
+    if(n>=3){
+        while(i<=j){
+            if(s[i]!=s[j])
+            {
+                if(error) return stored_j;
+                error=true;
+                stored_i=i;
+                stored_j=j;
+                i++;
+            }
+            else {
+                i++,j--;
+            }
+        }
+    }
+    return error?stored_i:-1;
+}
