@@ -1,0 +1,15 @@
+
+int findMedian(vector<int> arr) {
+   int odd_median=0;
+    int even_median=0;
+    sort(arr.begin(),arr.end());
+    int n=arr.size();
+    int sum1=n/2;
+    int sum2=((n/2)+1);
+    if(n%2!=0){
+       return odd_median=arr[n/2];
+    }
+    else{
+        return even_median=arr[(sum1+sum2)/2];
+    }
+}
