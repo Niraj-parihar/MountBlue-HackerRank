@@ -1,0 +1,26 @@
+
+
+vector<int> breakingRecords(vector<int> scores) {
+  vector<int> res;
+    int max_count=0;
+    int min_count=0;
+    int min=scores[0];
+    int max=scores[0];
+    int n=scores.size();
+    for(int i=1;i<n;i++){
+        
+        if(scores[i]>max){
+            
+            max=scores[i];
+            max_count++;
+        }
+        else if(scores[i]<min){
+min=scores[i];
+            min_count++;
+        }
+    }
+        
+        res.push_back(max_count);
+        res.push_back(min_count);
+        return res;
+}
