@@ -1,0 +1,9 @@
+int sockMerchant(int n, vector<int>& ar) {
+    map<int, int> counter;
+    int pairs = 0;
+    for (int& n : ar) {
+        counter[n]++;
+        if (!(counter[n] % 2)) pairs++;
+    }
+    return pairs;
+}
