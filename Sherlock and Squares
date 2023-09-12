@@ -1,0 +1,13 @@
+
+int num_of_squares(int first_num, int last_num) {
+    int sr = sqrt(first_num);
+    int count = 0;
+    while ((sr * sr) <= last_num)
+    {
+        if ((sr * sr) >= first_num)
+            count++;
+        sr++;
+    }
+    return count;
+}
+
